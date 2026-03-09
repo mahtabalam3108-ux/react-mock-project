@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter,  Routes, Route } from "react-router-dom";
 import Login from './components/Login';
 import Counter from './components/Counter';
 import TableList from './components/Table';
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
     <p>Hello</p>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
       <HashRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
@@ -31,7 +31,7 @@ function App() {
           <Route path="/user-form" element={<UserForm />} />
         </Routes>
         </HashRouter>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
