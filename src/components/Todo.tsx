@@ -5,7 +5,7 @@ type TodoItem = { date: Date; text: string; completed: boolean };
 const TodoApp = () => {
   const [todo, setTodo] = useState<TodoItem[]>([]);
   const [inputText, setInputText] = useState('');
-  const [searchText, setSearchText] = useState('');
+  // const [searchText, setSearchText] = useState('');
 
   const handleAdd = () => {
     if (inputText.trim() === '') return;

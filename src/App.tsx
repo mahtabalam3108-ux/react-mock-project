@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/Login';
 import Counter from './components/Counter';
@@ -8,12 +8,12 @@ import SearchableList from './components/SearchableList';
 import OpenCloseModal from './components/OpenClose/OpenClose';
 import ListCustomHook from './components/custom-hook/List-Custom-Hook';
 import UserForm from './components/Form';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <>
