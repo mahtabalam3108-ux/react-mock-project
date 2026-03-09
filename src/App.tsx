@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/Login';
 import Counter from './components/Counter';
 import TableList from './components/Table';
@@ -19,6 +19,7 @@ function App() {
     <>
     <p>Hello</p>
       <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/counter" element={<Counter />} />
@@ -29,6 +30,7 @@ function App() {
           <Route path="/fetch-cutom-hook" element={<ListCustomHook />} />
           <Route path="/user-form" element={<UserForm />} />
         </Routes>
+        </HashRouter>
       </BrowserRouter>
       {/* <div>
         <a href="https://vite.dev" target="_blank">
